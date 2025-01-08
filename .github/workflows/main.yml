@@ -22,7 +22,7 @@ jobs:
       run: dotnet publish -c Release -o out
 
     - name: Deploy to GitHub Pages
-      uses: muhammadhafiz18/muazzinapp@v4
+      uses: muhammadhafiz18/muazzinapp
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./out/wwwroot
